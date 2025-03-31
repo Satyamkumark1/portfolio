@@ -1,0 +1,222 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 1rem 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00c4cc;
+}
+
+/* Contact Button with Hover Animation */
+.contact-btn {
+    padding: 0.5rem 1.5rem;
+    background: #00c4cc;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #008b8b;
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 196, 204, 0.3);
+}
+
+/* Hero Section with Diagonal Split */
+.hero {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 60px; /* Offset for fixed header */
+}
+
+.hero-left {
+    flex: 1;
+    background: #e5e5e5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    animation: fadeInLeft 1s ease-out;
+}
+
+.hero-left h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-left h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.hero-left p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00c4cc;
+    transform: translateY(-5px);
+}
+
+.hero-right {
+    flex: 1;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    animation: fadeInRight 1s ease-out;
+}
+
+.hero-right img {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.quote {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    font-style: italic;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Stories Section */
+.stories {
+    padding: 4rem 2rem;
+    background: #000;
+    text-align: center;
+    position: relative;
+}
+
+.stories h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.stories p {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    color: #ccc;
+    animation: fadeIn 2s ease-out;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    background: #00c4cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background: #008b8b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 196, 204, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

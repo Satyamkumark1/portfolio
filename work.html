@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work | Portfolio</title>
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor"></div>
+    
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="work.html" class="active">Work</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="work-hero">
+            <div class="hero-content">
+                <h1 class="animated-text">My <span class="highlight">Work</span></h1>
+                <p class="subtitle">Selected Design and videos that showcase my skills and creativity</p>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+        <section class="work-gallery">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Image-Section</button>
+                <button class="filter-btn" data-filter="mobile">video-Section</button>
+                
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Upload Video -->
+                <div class="project-card" data-category="upload">
+                    <div class="project-image">
+                        <video controls>
+                            <source src="dhruv.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3> Videos</h3>
+                                
+                                <a href="#" class="view-btn">Show Videos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Upload Image -->
+                <div class="project-card" data-category="upload">
+                    <div class="project-image">
+                        <img src="background.jpg" alt="Upload Image">
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h3> Designs</h3>
+                                
+                                <a href="#" class="view-btn">Show Design</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to start your project?</h2>
+            <p>Add to what comes from your name, address your client name and/or phone. Sublease or share letters you are not ready!</p>
+            <a href="contact.html" class="cta-button">Get in Touch</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="copyright">© 2025 Created by Shivansh</p>
+        </div>
+    </footer>
+
+    <script src="work.js"></script>
+</body>
+</html>
